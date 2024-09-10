@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("./img/back.jpg");
+    color: rgb(27, 27, 27);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 50px auto;
+}
+
+header {
+    position: relative;
+}
+
+header .logo {
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+
+header ul.nav {
+    float: right;
+    list-style: none;
+}
+
+header ul.nav li {
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+    
+}
+
+header ul.nav li:hover {
+    opacity: 50%;
+}
+
+header .shop-card-button {
+    float: right;
+    cursor: pointer;
+    transition: color 500ms ease;
+    padding: 2px;
+}
+
+header .shop-card-button:hover,
+header .shop-card-button.active {
+    color: #09ff00;
+}
+
+header .shop-cart {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 450px;
+    min-height: 100px;
+    background-image: url('./img/bgr.jpg');
+    width: 30%;
+    z-index: 1000;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+header .presentation {
+    margin: 50px 0;
+    background: url('./img/bgr.jpg') no-repeat;
+    width: 100%; 
+    height: 500px; 
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgb(100, 96, 90);
+    position: relative;
+    border-radius: 24px;
+    box-shadow: 2px 2px 4px #000000;
+    transition: transform 500ms ease;
+}
+
+header .presentation:hover {
+    transform: scale(1.02);
+}
+
+header .presentation::after {
+    content: 'Сделай счастливым свою вторую половинку';
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    color: aliceblue;
+    width: 500px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+header .presentation::before {
+    content: 'Уркашения по низкой и доступной цене';
+    position: absolute;
+    top: 220px;
+    left: 50px;
+    color: aliceblue;
+    width: 200px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .item {
+    width: 30%;
+    margin-bottom: 50px;
+    background-color: rgb(43, 43, 43);
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    padding: 9px;
+    
+}
+
+main .item img {
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    transition: transform 500ms ease;
+}
+
+main .item img:hover {
+    transform: scale(1.06);
+}
+
+main h2, main p, main b {
+    margin: 10px 20px;
+    color:rgb(255, 255, 255)
+}
+
+
+main b {
+    color: #09ff00;;
+    margin-bottom: -5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.add-to-card {
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #61ff61;
+    border-radius: 100px;
+    margin: 10px;
+    margin-right: 15px;
+    margin-left: 340px;
+    margin-bottom: 15px;
+}
+
+.add-to-card:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    font-weight: 500;
+    content: normal;
+}
+
+footer {
+    text-align: center;
+    margin-top: 10px;
+}
+    
